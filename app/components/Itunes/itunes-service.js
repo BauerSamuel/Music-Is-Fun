@@ -26,7 +26,8 @@ class ItunesService {
     $.getJSON(url)
       .then(res => {
         let results = res.results.map(s => new Song(s))
-        setState('songs', results)
+        let songResults = results.filter(song => song.kind == "song")
+        setState('songs', songResults)
       })
       .catch(err => console.log(err))
   }
