@@ -7,25 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Music Is Fun!</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="assets/style.css">
 
 </head>
 
-<body>
+<body class="bg-color">
     <div class="container-fluid">
-        <div class="row">
-            <form class="col-md-offset-8 col-md-4 col-sm-12 form-inline"
-                onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+        <div id="top-part" class="row">
+            <div class="text-left col-4">
+                <h1>MUSIFY</h1>
+            </div>
+            <div id="music-controls" class="col-md-4 col-sm-4"></div>
+            <form class="col-md-4 col-sm-4 form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
                 <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
                 <div class="form-group">
                     <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-                    <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+                    <button type="submit" class="btn btn-outline bg-color3" id="get-music-button">Get Music</button>
                 </div>
             </form>
         </div>
-    </div>
-    <div class="container">
-        <div id="songs" class="row">
+        <div class="row text-center">
+            <div id="info" class="col" style="margin-top: 3vh;">
 
+            </div>
+        </div>
+    </div>
+    <div class="container txt-color">
+        <div id="songs" class="row text-center" style="margin-top: 5vh; display: flex; justify-content: center;">
+            <div class="col text-center" style="display: flex; justify-content: center;">
+                <img src="assets/images/Music Logo.png"
+                    style="width: 400px;height: 400px; max-width: 100%; min-width: 10vh;" alt="Logo" />
+            </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

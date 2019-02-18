@@ -12,20 +12,16 @@ export default class Song {
     }
     get Template() {
         return `
-            <div class="col-md-3 col-sm-12 card my-3" style="width: 20rem; border: 3 solid red;">
+            <div class=" bg-color1 col-md-3 col-xs-12 card my-3" style="width: 20rem; border: 3 solid red;">
             <img src="${this.albumArt}" class="card-img-top" alt="Album Art">
-            <div class="card-body">
-                <h5 class="card-title">Title: ${this.title}</h5>
+            <div class="bg-color1 card-body">
+                <h6 onclick="app.controllers.itunesCtrl.playSong('${this.preview}')" class="card-title">Title: ${this.title}</h6>
                 <p class="card-text mute-text">Price: $${this.price}</p>
             </div>
-            <ul class="list-group list-group-flush">
-            <li class="list-group-item">Artist: ${this.artist}</li>
-            <li class="list-group-item">Album: ${this.collection} -- $${this.albumPrice}</li>
+            <ul class=" list-group list-group-flush">
+            <li class="bg-color1 list-group-item">Artist: ${this.artist}</li>
+            <li class="bg-color1 list-group-item">Album: ${this.collection} -- $${this.albumPrice}</li>
             </ul>
-            <audio style="width: 250px; max-width: 250px; min-width: 150px;margin-top: 7px; margin-bottom: 7px;" controls>
-                <source src="${this.preview}" type="audio/mpeg">
-                Your browser does not support the audio element.
-                </audio>
             </div>
              `
 

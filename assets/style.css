@@ -1,0 +1,40 @@
+.bg-color{
+  background-color: black;
+}
+
+.bg-color1{
+  background-color: #29264e;
+}
+
+.bg-color2{
+  background-color: #9881f5;
+}
+
+.bg-color3{
+  background-color: #f97d81;
+}
+
+.bg-color4{
+  background-color: #f9d08b;
+}
+
+.bg-color5{
+  background-color: #82aff9;
+}
+
+.txt-color{
+  color: lightgrey;
+}
+
+.card{
+  border: 3px solid black;
+}
+
+.card-title:hover{
+  cursor: pointer;
+}
+
+/* #top-part{
+  display: flex;
+  justify-content: flex-end;
+} */
